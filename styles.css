@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #compass {
+    width: 200px;
+    height: 200px;
+    border: 10px solid #3498db;
+    border-radius: 50%;
+    position: relative;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+  }
+  
+  #arrow {
+    width: 2px;
+    height: 100px;
+    background-color: #e74c3c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translate(-50%, -100%) rotate(0deg);
+    transition: transform 0.1s ease;
+  }
+  
+  #kaaba {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    left: -9px;
+    display: none;
+  }
+  
+  #direction {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 20px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    #compass {
+      width: 150px;
+      height: 150px;
+    }
+  
+    #arrow {
+      height: 75px;
+    }
+  }
